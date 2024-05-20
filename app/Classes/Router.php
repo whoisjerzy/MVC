@@ -76,7 +76,7 @@ class Router
             $r->addGroup('/api/v1', function (RouteCollector $r) {
                 // Define your API routes here
                 $r->addRoute('GET', '/users', ['BARTENDER\Controllers\UserController@index', AuthMiddleware::class]);
-                $r->addRoute('GET', '/users/{id:\d+}', ['BARTENDER\Controllers\UserController@show', AuthMiddleware::class]);
+                $r->addRoute('GET', '/user/{id:\d+}', ['BARTENDER\Controllers\UserController@show', AuthMiddleware::class]);
                 // Add more routes as needed
             });
 

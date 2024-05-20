@@ -42,7 +42,7 @@ class AuthController
     public function checkLoginStatus()
     {
         if ($this->auth->isLoggedIn()) {
-            echo 'User is logged in';
+            echo 'User is logged in as a ' . $_SESSION["user"][0]["role"];
         } else {
             echo 'User is not logged in';
         }
