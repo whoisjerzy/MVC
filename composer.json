@@ -1,0 +1,12 @@
+{
+  "name": "jerzy/bartender",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "BARTENDER\\": "app/"
+    }
+  },
+  "require": {
+    "nikic/fast-route": "^1.3"
+  }
+}
